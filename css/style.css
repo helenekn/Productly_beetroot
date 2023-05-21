@@ -16,8 +16,13 @@ body {
    margin: 0 auto;
 }
 
+section {
+   margin-bottom: 100px;
+}
+
 .header_flex,
-.first_screen_flex {
+.first_screen_flex,
+.benefits_flex {
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -71,10 +76,6 @@ button:hover {
    color: #ffffff;
 }
 
-.first_screen {
-   padding-bottom: 100px;
-}
-
 .first_screen_content {
    width: 500px;
    padding-top: 97px;
@@ -109,10 +110,6 @@ button:hover {
    font-family: "Poppins";
 }
 
-.features {
-   margin-bottom: 100px;
-}
-
 .features_title {
    margin: 0 auto;
    max-width: 540px;
@@ -131,7 +128,8 @@ button:hover {
    padding-bottom: 70px;
 }
 
-.feature_text {
+.feature_text,
+.benefits_text {
    font-weight: 500;
    font-size: 16px;
    line-height: 1.6;
@@ -161,4 +159,37 @@ button:hover {
 .feature_button {
    display: block;
    margin: 0 auto;
+}
+
+.benefits_content {
+   max-width: 525px;
+   margin: 21.5px 0;
+}
+
+.benefits_title {
+   margin: 0 0 20px;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.2;
+   color: var(--main_font_color);
+}
+
+.benefits_descr {
+   margin-bottom: 40px;
+}
+
+.benefits_subtitle {
+   padding: 30px 0 10px;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 26px;
+   color: var(--main_font_color);
+}
+
+.benefits_subtitle:first-child {
+   padding-top: 0;
+}
+
+.benefits_img {
+   max-width: 562px;
 }
