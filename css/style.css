@@ -22,7 +22,8 @@ section {
 
 .header_flex,
 .first_screen_flex,
-.benefits_flex {
+.benefits_flex,
+.product_flex {
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -129,7 +130,8 @@ button:hover {
 }
 
 .feature_text,
-.benefits_text {
+.benefits_text,
+.product_text {
    font-weight: 500;
    font-size: 16px;
    line-height: 1.6;
@@ -163,10 +165,11 @@ button:hover {
 
 .benefits_content {
    max-width: 525px;
-   margin: 21.5px 0;
+   margin: 20.5px 0;
 }
 
-.benefits_title {
+.benefits_title,
+.product_title {
    margin: 0 0 20px;
    font-weight: 700;
    font-size: 36px;
@@ -192,4 +195,44 @@ button:hover {
 
 .benefits_img {
    max-width: 562px;
+}
+
+.product_img {
+   max-width: 570px;
+}
+
+.product_content {
+   max-width: 505px;
+   margin: 48px 0;
+}
+
+.product_descr {
+   min-width: 440px;
+}
+
+.product_list {
+   margin: 40px 0 48px;
+   max-width: 415px;
+   padding-left: 50px;
+}
+
+.product_item {
+   max-width: 420px;
+   margin-bottom: 30px;
+   position: relative;
+}
+
+.product_item:last-child {
+   margin-bottom: 0;
+}
+
+.product_list .product_item::before {
+   content: "";
+   display: block;
+   position: absolute;
+   height: 35px;
+   width: 35px;
+   left: -50px;
+   top: 5px;
+   background: url("../assets/icons/check.png") center center/cover no-repeat;
 }

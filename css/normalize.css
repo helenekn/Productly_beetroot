@@ -55,6 +55,8 @@ li {
 ul {
    -webkit-padding-start: 0;
    padding-inline-start: 0;
+   -webkit-padding-end: 0;
+   padding-inline-end: 0;
 }
 
 /* Grouping content
